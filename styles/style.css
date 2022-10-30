@@ -36,16 +36,20 @@ body {
     background-color:var(--background-color);}
 
 .container {
-  width: 1600px;
+  width: 1200px;
   margin: 0 auto;
-  padding: 0 200px;}
+  padding: 0 15px;
+}
 
 /*хедер*/
-.header .container {
+.header-container {
     display: flex;
-    align-items: center;}
-.header-border {
+    align-items: center;
     border-bottom: 1px solid #ECECEC;}
+.header-nav {
+    display: flex;
+    align-items: center;
+    margin-right: 344px;} 
 /*логотип*/  
 .logo {
     font-family: 'Raleway', sans-serif;
@@ -54,8 +58,9 @@ body {
     line-height: 1.19;
     letter-spacing: 0.03em;
     text-decoration: none;}
-.logo-blue {
-    color: var(--logo-web)}
+.header-logo-blue {
+    color: var(--logo-web);
+    padding-left:400px;}
 .header-logo-black{
     color: var(--header-logo-studio);
     margin-right: 93px;}
@@ -75,13 +80,9 @@ body {
     align-items: center;
     padding-top: 32px;
     padding-bottom: 32px;
-    }
-.header-nav {
-    display: flex;
-    align-items: center;
-    padding-top: 24px;
-    padding-bottom: 25px;
-    margin-right: 344px;}  
+    margin: 0px 0px;}
+.header-list-item:last-child {
+    margin-right: 344px;}
 .header-list-item:not(:first-child) {
     margin-left: 50px;}
 .header-list-contacts:not(:first-child) {
@@ -114,11 +115,13 @@ body {
     padding-top: 59px;
     background-color:var(--background-color) ;
 }
-.banner-background {
+.banner-container {
     background-color: var(--banner-background-color);
     text-transform: uppercase;
     padding-top: 200px;
-    padding-bottom: 200px;}
+    padding-bottom: 200px;
+    margin: 0px 0px 0px 0px;
+width: auto;}
 .banner-title { 
     font-weight: 900;
     font-size: 44px;
@@ -138,13 +141,11 @@ body {
     background-color: var(--nav-color);
     border: 1px solid var(--nav-color);
     border-radius: 4px;
-    padding: 10px 32px;}
-.button {
+    padding: 10px 32px;
     cursor: pointer;
     display: flex;
     align-items: center;
-    margin: 0 auto;
-    margin-top: 30px;}
+    margin: 30px auto 0px auto;}
 
 /*наші особливості*/
 .hiden-title {
@@ -172,8 +173,7 @@ body {
     line-height: calc(16/14);
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    max-width: 270px;
-max-height: 16px;}
+    max-width: 270px;}
 .features-list-description{
     font-size: 14px;
     line-height: 1,71;
@@ -242,6 +242,8 @@ max-height: 16px;}
     padding: 60px 0 60px 0;}
 .footer-logo {
     margin-right: 0px;}
+.footer-logo-blue {
+    color: var(--logo-web);}
 .footer-contacts-list-item:first-child {
     margin-top: 20px;}
 .footer-contacts-list-item:not(:last-child) {
@@ -264,6 +266,15 @@ max-height: 16px;}
 
 
 /*портфоліо*/
+.portfolio {
+    padding-top: 94px;
+    padding-bottom: 94px;}
+.list-buttons-position {
+    display: flex;
+    align-items: center;
+    padding-left: 300px;
+    margin-bottom: 50px;}
+
 .portfolio-title {
     font-weight: 700;
     font-size: 18px;
@@ -287,7 +298,39 @@ max-height: 16px;}
     letter-spacing: 0.03em;
     color: var(--text-color);
     background-color: var(--button-color);
-    cursor: pointer;}
-.button:hover, .button:focus {
+    cursor: pointer;
+    padding: 6px 22px 6px 22px;
+    margin-left: 8px;
+    border-radius: 6px;
+    border: none;}
+.portfolio-button:not(:last-child)  {
+    margin-left: 8px;}
+.portfolio-button:hover, .portfolio-button:focus {
     background-color:var(--nav-color);
     color: var(--banner-text)}
+.portfolio-project {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;}
+.portfolio-project-list {
+    background-color: #FFFFFF;
+    text-align: center;
+    outline: 0.65px  solid #EEEEEE;}
+.portfolio-project-list:nth-child(2) {
+    margin-right: 30px;
+    margin-left: 30px;}
+.portfolio-project-list:nth-child(5) {
+    margin-right: 30px;
+    margin-left: 30px;}
+.portfolio-project-list:nth-child(8) {
+    margin-right: 30px;
+    margin-left: 30px;}
+.portfolio-project-list:nth-child(3) {
+    margin-top: 30px;
+    margin-bottom: 30px;}
+.portfolio-project-list:nth-child(4) {
+    margin-top: 30px;
+    margin-bottom: 30px;}
+.portfolio-project-list:nth-child(5) {
+    margin-top: 30px;
+    margin-bottom: 30px;}
