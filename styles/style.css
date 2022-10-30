@@ -45,11 +45,12 @@ body {
 .header-container {
     display: flex;
     align-items: center;
+    }
+.header {
     border-bottom: 1px solid #ECECEC;}
 .header-nav {
     display: flex;
-    align-items: center;
-    margin-right: 344px;} 
+    align-items: center;} 
 /*логотип*/  
 .logo {
     font-family: 'Raleway', sans-serif;
@@ -57,10 +58,10 @@ body {
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
-    text-decoration: none;}
+    text-decoration: none;
+    }
 .header-logo-blue {
-    color: var(--logo-web);
-    padding-left:200px;}
+    color: var(--logo-web);}
 .header-logo-black{
     color: var(--header-logo-studio);
     margin-right: 93px;}
