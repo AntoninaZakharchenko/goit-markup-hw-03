@@ -60,7 +60,7 @@ body {
     text-decoration: none;}
 .header-logo-blue {
     color: var(--logo-web);
-    padding-left:400px;}
+    padding-left:200px;}
 .header-logo-black{
     color: var(--header-logo-studio);
     margin-right: 93px;}
