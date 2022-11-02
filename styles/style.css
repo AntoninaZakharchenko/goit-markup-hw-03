@@ -105,7 +105,7 @@ body {
     background-color: var(--banner-background-color);
     padding-top: 200px;
     padding-bottom: 200px;
-    margin: 0px 0px 0px 0px;}
+   }
 .banner-title { 
     font-weight: 900;
     font-size: 44px;
@@ -113,7 +113,9 @@ body {
     color: var(--banner-text);
     text-transform: uppercase;
     max-width: 696px;
-    text-align: center;}
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;}
 .banner-button {
     font-family: inherit;
     font-weight: 700;
