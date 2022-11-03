@@ -23,7 +23,9 @@ body {
     font-family: 'Roboto', sans-serif;
     color: var(--text-color);
     background-color:var(--background-color);}
-
+h1, h2, h3, h4, h5, h6, ul, li, p {
+    margin-top: 0px;
+    margin-bottom: 0px ;}
 .container {
   width: 1200px;
   margin-left: auto;
@@ -40,6 +42,8 @@ body {
 .header-nav {
     display: flex;
     align-items: center;} 
+.link.current {
+    color: var(--nav-color);}
 /*логотип*/  
 .logo {
     font-family: 'Raleway', sans-serif;
@@ -114,8 +118,8 @@ body {
     text-transform: uppercase;
     max-width: 696px;
     text-align: center;
-    margin-right: auto;
-    margin-left: auto;}
+margin-left: auto;
+margin-right: auto;}
 .banner-button {
     font-family: inherit;
     font-weight: 700;
@@ -131,7 +135,9 @@ body {
     cursor: pointer;
     display: flex;
     align-items: center;
-    margin: 30px auto 0px auto;}
+    margin-top: 30px;
+margin-left: auto;
+margin-right: auto;}
 
 /*наші особливості*/
 .hiden-title {
@@ -171,7 +177,6 @@ body {
 
 /*чим ми займаємось*/
 .projects {
-    padding-top: 94px;
     padding-bottom: 94px;}
 .projects-list{
     display: flex;}
@@ -205,8 +210,10 @@ body {
 .photo {
     border-radius: 2px;}
 .teem-members-about {
-    margin-top: 30px;
-    margin-bottom: 30px;}
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 60px;
+    padding-right: 60px;}
 .team-members-list:not(:first-child)  {
     margin-left: 30px;}
 .team-members-item{
@@ -230,8 +237,7 @@ body {
     background-color: var(--footer-background-color);
     padding-top: 60px;
     padding-bottom: 60px;}
-.footer-logo {
-    margin-right: 0px;}
+
 .footer-logo-blue {
     color: var(--logo-web);}
 address {
@@ -314,7 +320,7 @@ address {
     font-size: 18px;
     line-height: calc(36/18);
     letter-spacing: 0.06em;
-    margin-top: 4px;}
+    margin-bottom: 4px;}
 .portfolio-type {
     color: var(--text-color-2);
     font-weight: 400;
@@ -322,8 +328,10 @@ address {
     line-height: 1.88;
     letter-spacing: 0.03em;}
 .portfolio-about {
-    margin-top: 20px;
-    margin-bottom: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 24px;
+    padding-right: 24px;
     border-left: 1px solid #EEEEEE;
     border-right: 1px solid #EEEEEE;
     border-bottom: 1px solid #EEEEEE;}
